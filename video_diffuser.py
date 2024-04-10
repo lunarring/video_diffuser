@@ -112,8 +112,18 @@ if use_modulated_unet:
     
 prompt_decoder = 'fire'
 prompt_embeds_decoder, negative_prompt_embeds_decoder, pooled_prompt_embeds_decoder, negative_pooled_prompt_embeds_decoder = blender.get_prompt_embeds(prompt_decoder, negative_prompt)
-video_list = ['EXTRA_SHOTS']
-prompt_list = ['twin peaks, surrealist cinematography, high contrast, 4K, high resolution images of the human bodys']
+video_list = ['macumbas']
+prompt_list = ['abstract purple blue and red shapes, skulls made of crystals, fungae sprouting from crevices, lizards, colorfoul alien flowers made of glass, 4K, unreal engine',
+               'abstract purple blue and red shapes, fungae sprouting from crevices, 4K, unreal engine',
+               'abstract purple blue and red light, fungae sprouting from crevices, 4K, unreal engine',
+               'abstract purple blue and red light, modified racing cars, tunning, 4K, unreal engine',
+               'macro photo of alien flowers made of glass, 4K, unreal engine',
+               'high resolution portrait photo of minimalist designer masks, 4K',
+               'macro photo of fungal growth patterns in high resolution, 4K'
+               'macro photo of fungal growth patterns mixed with crystals and glass reflecting surfaces, 4K',
+               'macro photo of fungal growth patterns mixed with crystals and glass reflecting surfaces, crystal skulls, 4K'
+               'macro photo of racing car parts, purple blue and red neon lights, crystal skulls, 4K'
+               ]
 promptmanager = PromptManager(False, prompt_list)
 
 
